@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
-
 dotenv.config();
 
-const PORT = process.env.PORT;
-
-export default PORT;
+export default {
+    PORT: Number(process.env.PORT) || 3000
+};
