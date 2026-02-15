@@ -1,9 +1,10 @@
 import express from "express";
-
-import InfoController from "../../controllers/index.js";
+import { info } from "../../controllers/index.js";
+import bookingRoutes from "./booking.js";
 
 const router = express.Router();
 
-router.get('/info', InfoController.info);
+router.get("/info", info);
+router.use("/bookings", bookingRoutes);
 
 export default router;

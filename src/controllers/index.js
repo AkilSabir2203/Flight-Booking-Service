@@ -1,5 +1,7 @@
 import info from "./info-controllers.js";
+import * as BookingController from "./booking-controller.js";
 
-export default {
-  info
+export {
+  info,
+  BookingController,
 };
