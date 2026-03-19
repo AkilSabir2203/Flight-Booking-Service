@@ -15,7 +15,7 @@ export async function connectQueue() {
 
 export async function sendData(data) {
   try {
-    channel.sendToQueue(
+    await channel.sendToQueue(
       "noti-queue",
       Buffer.from(JSON.stringify(data))
     );
@@ -23,3 +23,5 @@ export async function sendData(data) {
     console.log("queue error", error);
   }
 }
+
+export default {connectQueue, sendData};

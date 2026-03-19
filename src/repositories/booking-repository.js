@@ -4,7 +4,7 @@ import { Op } from "sequelize";
 import db from "../models/index.js";
 import CrudRepository from "./crud-repository.js";
 import { Enums } from "../utils/common/index.js";
-import AppError from "../utils/errors/app-error.js"; // make sure this path matches
+import AppError from "../utils/errors/app-error.js";
 
 const { Booking } = db;
 const { CANCELLED, BOOKED } = Enums.BOOKING_STATUS;
