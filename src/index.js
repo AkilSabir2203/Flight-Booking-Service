@@ -19,7 +19,7 @@ app.listen(ServerConfig.PORT, async () => {
   // await Queue.sendData({
   //   recepientEmail: "test@gmail.com",
   //   subject: "Test Msg",
-  //   text: "Hello from RabbitMQ🚀"
+  //   text: "Hello from RabbitMQ 2🚀"
   // });
   console.log("Queue Connected!")
 });
